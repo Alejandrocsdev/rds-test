@@ -21,6 +21,10 @@ class AuthController {
     const port = process.env.PORT
     const test = process.env.TEST
     const password = process.env.PASSWORD
+    const appRunner = process.env.APPRUNNER
+    const one = process.env.ONE
+    const two = process.env.TWO
+    const three = process.env.THREE
     res.status(200).json({ port, test, password })
   }
 
