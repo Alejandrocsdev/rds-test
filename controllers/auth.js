@@ -18,8 +18,10 @@ class AuthController {
   }
 
   signIn = async (req, res, next) => {
-    // const users = await User.findAll()
-    // res.status(200).json(users)
+    const port = process.env.PORT
+    const test = process.env.TEST
+    const password = process.env.PASSWORD
+    res.status(200).json({ port, test, password })
   }
 
   signOut = async (req, res, next) => {
