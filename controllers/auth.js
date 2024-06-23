@@ -25,7 +25,7 @@ class AuthController {
     const one = process.env.ONE
     const two = process.env.TWO
     const three = process.env.THREE
-    res.status(200).json({ port, test, password })
+    res.status(200).json({ port, test, password, appRunner, one, two, three })
   }
 
   signOut = async (req, res, next) => {
